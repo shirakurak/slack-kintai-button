@@ -39,7 +39,17 @@
 <p>
     <button type="button" class="post" id="mistake">↑間違いです... :bow:</button>
 </p>
+
 <hr>
+
+<h1>日報テンプレート生成</h1>
+勤務時間：
+<textarea id="textAreaForTime" rows="1" cols="30"></textarea>
+<textarea id="textAreaForNippou" rows="30" cols="30"></textarea>
+<button id="createNippouTemplateButton">生成する</button>
+
+<hr>
+
 <h1>カスタム投稿</h1>
 <p>
     <span id="custom-text-info" style="display:none">↓デフォルトメッセージを config.js で設定可能です</span>
@@ -58,6 +68,7 @@
 <script src="https://unpkg.com/dayjs@1.8.21/locale/ja.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
 <script src="config.js"></script>
+<script src="script.js"></script>
 <script>
     // console.log(target_list)
     const HISTORIES_KEY = 'slack-kintai-histories'
